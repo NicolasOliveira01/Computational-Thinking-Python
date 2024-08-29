@@ -1,4 +1,4 @@
-'''
+
 Esse código vai analisar todos os números até o numero escolhido menos 1
 num = int(input("Digite um número: "))
 i = 2
@@ -11,8 +11,6 @@ while i < num:
         print(f"{num} é primo")
     i+=1 # esse i+=1 ele pertence ao while, então depois do numero que está sendo analisado do i passar pelo if ou elif ele vai adicionar mais um
 
-'''
-'''
 num=48
 qtd_divs = 0
 i=2
@@ -26,8 +24,7 @@ while i < num:
         print(f"{num} é primo")
         break
     i+=1
-'''
-'''
+
 num=3
 while num < 100: # 3 ao 100
     num+=1
@@ -44,8 +41,7 @@ while num < 100: # 3 ao 100
 # while. Ou seja, supondo que o num esteja no número 10 e o segundo while vai pegar todos o numeros de 2 a 10 (2,3,4,5,6,7,8,9,10) e todos eles vão entrar ou dentro do if ou dentro
 # do elif. Caso o resto da divisão de alguns desses números (3,4,5,6,7,8,9,10) for igual a 0, o número que está sendo analisado em num não é primo, e se, o número analisado em i
 # for maior que a metade de num sem o resto da divisão dar 0 ele é primo
-'''
-'''
+
 a = 1
 b = 0
 qtd = 0
@@ -56,8 +52,7 @@ while a+b < 100:
     qtd+=1
     print(c)
 # forma de printar os números de fibonacci até um um número 
-'''
-'''
+
 num=int(input("Digite até qual sequência você quer saber da sequência de fibonacci: "))
 a=1
 b=0
@@ -69,8 +64,7 @@ while i<num:
     i+=1
     print(c)
 # forma de printar os números de fibonacci até um sequência determinada
-'''
-'''
+
 num=100
 a=1
 b=0
@@ -87,4 +81,3 @@ while a+b<num:
             print(f"{c} é primo mas faz parte da sequência de fibonacci")
             break
         i+=1
-'''
