@@ -2,7 +2,7 @@
 
 # TRY EXCEPT
 
-'''
+
 lista=[4,5,6,7,9]
 while True:
     try:
@@ -21,7 +21,6 @@ while True:
         break
     finally:
         print("Não sirvo para muito coisa")
-'''
 
 # Neste exemplo tem uma lista com as str a,b e c; e ele pede para o usuário digitar um número que depois vai printar o elemento com esse índice na lista
 # Porém, o usuário pode digitar alguma coisa que pode dar um erro, e esses excepts seriam os tipos de erros que seriam possíveis
@@ -32,7 +31,7 @@ while True:
 # Finally -> sempre vai ser executado, mesmo quando ocorrer algum except ou não
 # else vai ser executado quando não acontecer nenhum except e neste caso vai printar qual a letra e um print que deu certo, precisa do break por causa do while True
 
-'''
+
 while True:
     try:
         num1 = float(input("Diga um numero: "))
@@ -45,13 +44,11 @@ while True:
     else:
         print("Voce nao e tao bobao")
         break
-'''
 
 # o código pede para o usuário digitar dois números e depois faz a divisão deles
 # ZeroDivisionError -> quando tenta fazer uma divisão com o denominador com 0
 # ValueError -> quando digita uma str neste caso
 
-'''
 while True:
     try:
         flag = "primeiro"
@@ -66,7 +63,7 @@ while True:
     else:
         print(resultado)
         break
-'''
+
 
 # o código pede para o usuário digitar dois números e flag vai armazenar qual número não foi um int
 # se a não for int logo vai aparecer o erro e vai aparecer o primeiro flag e a mesma coisa com o b
@@ -83,7 +80,7 @@ times = {
 # esse dicionário tem chaves que são times e cada chave tem seu valor
 # se printar times e qualquer chave vai printar o valor dessa chave
 
-'''
+
 while True:
     time = input("Diga seu time : ")
     try:
@@ -91,14 +88,14 @@ while True:
         break
     except KeyError:
         print(f"Você deve digitar um desses: {times.keys()}")
-'''
+
 
 # esse código pede primeiro para o usuário digitar um time
 # o time que o usuário digitar vai mostrar o valor daquele time que é uma chave do dicionário
 # KeyError -> quando tenta acessar uma chave que não existe
 # times.keys() vai mostrar todas as chaves daquele dicionário
 
-'''
+
 while True:
     time = input("Diga seu time : ")
     try:
@@ -106,7 +103,7 @@ while True:
         break
     except KeyError:
         print(f"Você deve digitar um desses: {times.keys()}")
-'''
+
 
 # o dicionário times tem suas chaves como nomes de times e cada um tem um valor específico
 # time é um input e dentro do try vai mostrar o valor da chave que o usuário digitou
@@ -329,7 +326,7 @@ compra2 = {
     'vinhos' : {}
 }
 
-'''
+
 c_f=obriga_opcao('Você é um cliente ou um funcionário? (c/f): ', ['c','f'])
 lista_opcoes1= ['0','1','2','3','4',]
 if c_f=='c':
@@ -377,7 +374,7 @@ else:
                 break
     else:
         print("Encerrando programa!")
-'''
+
 
 # Na parte do endereço precisa do .keys() no compra2['endereço'].keys() e também precisa do [key] em compra2['endereço'][key], além de ser = info não .append(info)
 # a opcao precisa ser um int
@@ -489,7 +486,7 @@ def bubble_sort(lista):
 # se o número analisado for maior que o seu do lado ele vai trocar e o trocou = true vai ser só uma forma de printar somente quando a lista ja estiver ordenada
 
 #exemplo para entender um for dentro de um for
-'''
+
 for i in range(len(lista3)): #0,1,2,3,4,5,6
     print(f'para i={i}')
     for j in range(len(lista3)-i -1):
@@ -510,5 +507,4 @@ j -> 0,1
 para i=5
 j -> 0
 para i=6
-'''
 
