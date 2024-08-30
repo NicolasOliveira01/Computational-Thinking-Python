@@ -80,7 +80,6 @@ for i in range(len(xadrez)):
             xadrez[i][j]=0
 #mostra_matriz(xadrez)
 
-"""
 alunos = 3
 pesos = [1, 2, 3, 2, 1]
 notas = cria_matriz(5, alunos)
@@ -97,7 +96,7 @@ for j in range(len(notas)):
     media.append(media_aluno)
 
 print(media)
-"""
+
 
 materias=5
 alunos=10
