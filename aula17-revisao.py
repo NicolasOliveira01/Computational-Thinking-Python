@@ -1,4 +1,4 @@
-"""
+
 frase = "A aranha arranha a rã. A rã arranha a aranha. Nem a aranha arranha a rã. Nem a rã arranha a aranha."
 frase = frase.replace(".", "") # vai trocar o . por nada, ou seja, vai tirar o ponto
 print(frase)
@@ -15,7 +15,6 @@ for palavra in frase:
     else:
         dic[palavra] += 1
 print(dic)
-"""
 
 # vai iterar sobre os valores da frase e nao usa .keys() porque frase e uma lista e neste caso cada palavra e um valor
 # se a palavra nao estiver dentro do dicionario, ou seja, se a palavra nao for uma chave do dicionario ainda
@@ -25,13 +24,12 @@ print(dic)
 # mesma coisa com letras maiusculas, para o python A e diferentes de a, porem na contagem de palavras e igual
 # se nao fazer um split na frase, vai contar a quatidade de letras na frase e nao a quantidade de palavras
 
-"""
 lista = [10,20,30,40]
 print(lista)
 lista.remove(30) # .remove vai remover o valor da lista diretamente
 lista.pop(2) # .pop vai remover o valor da lista atraves do seu indice
 print(lista)
-"""
+
 
 # função para forçar resposta
 def forca_opcao(msg,lista_opcoes):
@@ -79,7 +77,7 @@ def cadastrar():
 # novo vai ser a nova informacao sobre esse whiskey
 # o novo vai ser o novo valor da chave que foi adicionado
 
-"""
+
 def alterar(preco_ou_estoque):
     for i in range(len(whiskeys1[preco_ou_estoque])):
         print(f"{i} : {whiskeys1[preco_ou_estoque][i]}")
@@ -87,7 +85,6 @@ def alterar(preco_ou_estoque):
     novo=int(input("Digite o novo valor: "))
     whiskeys1[preco_ou_estoque][escolha].append(novo)
     return
-"""
 
 def alterar(preco_estoque):
     for i in range(len(whiskeys1['tipo'])):
@@ -186,12 +183,10 @@ if cliente_ou_funcionario == "c":
 # se a marca que o usuario escolheu nao estiver dentro de compra1['garrafas'] vai crirar uma chave dentro dele com a marca e o seu valor vai ser 1
 # se aquele chave ja existir que no caso seria se o usuario ja escolheu aquele whiskey vai adicionar 1 ao valor da chave
 
-'''
 1º Exercício:
 	- tirar pontuação de frase
 	- deixar tudo minúsculo
 	- adicionar as palavras separadamente nas chaves de um dicionário
-	'''
 
 frase_qualquer = "~Olá! Você está bem? Espero que sim. O @céu está lindo hoje! #Vamos celebrar &festejar. Ei, você! Sim, você! 12345, 6789. Palavras?! Sim, palavras: 'alegria', 'amor', 'paz'. %$#@! Agora é ^hora de partir. Adeus!"
 
@@ -216,7 +211,7 @@ def formatacao(frase):
     dicionario_zuadas = {"ãàáâ": "a", "éêè": "e", "íîì": "i", "óôõò": "o", "úù": "u"} #dicionário com vogais acentudadas a serem substituídas por voagsi sem acento
     for char_especial in '!@#~$%&*()_.^,><?-/"': #loop nos caracteres especiais
         frase = frase.replace(char_especial, '') #cada caracter especiais sendo substituído por nada a cada loop
-    frase = frase.lower() #transforma em minúsculo
+    frase = frase.lower() #transforma em minúscul
     for chave_zuada in dicionario_zuadas.keys(): #percurso pelas chaves do dicionário
         for vogal_zuada in chave_zuada: #percorre cada vogal acentuada de cada chave de vogais
             frase = frase.replace(vogal_zuada, dicionario_zuadas[chave_zuada]) #substitui cada vogal zuada pelo valor de cada chave, que são as vogais sem acento
@@ -248,14 +243,13 @@ def print_dic(dic): #declara a função que printa as chaves do dicionário e se
 
 print(print_dic(contar(lista_de_palavras_formatadas)))
 
-'''
 2º Exercício:
 	Documento com especificações de carros
 	- função que acha o carro com maior potencia
 	- trazer todas as informações do carro que tem a maior potência
 	- adicionar a funcionalidade de poder cadastrar um carro com todas as informações
 	- adicionar a funcionalidade de poder excluir um carro cadastrado
-'''
+
 carros = {
     "marca": ["hb20", "polo", "celta", "fusca"],
     "potencia": [200, 1000, 100, 8000],
