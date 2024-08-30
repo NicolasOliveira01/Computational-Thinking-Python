@@ -26,7 +26,7 @@ while True:
 # o break no else é para sair do loop while
 # finally sempre vai printar mesmo quando der certo ou errado
 
-'''
+
 while True:
     try:
         flag = "primeiro"
@@ -41,7 +41,7 @@ while True:
     else:
         print(resultado)
         break
-'''
+
 
 # quando o usuário for digitar para o 'a' e o 'b', se não for um número inteiro logo vai entrar o ValueError
 # antes de pedir a e b a variável flag é atualizada
