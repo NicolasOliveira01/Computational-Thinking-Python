@@ -1,10 +1,10 @@
 import requests
 
-"""
+
 url = "https://pokeapi.co/api/v2/pokemon/pikachu"
 response=requests.get(url)
 print(response.json())
-"""
+
 
 # a biblioteca requests serve para fazer uma requisição HTTP a uma API da web
 # a função get é usada para receber uma resposta do servidor web
@@ -22,7 +22,7 @@ dic = {
     }
 }
 
-"""
+
 dic1 = dic['data']['languages'][0]
 print(dic1) # {'code': 'af', 'name': 'Afrikaans'}
 nome=dic1['name']
@@ -34,7 +34,7 @@ novo[sigla]=nome
 print(novo) # {'af': 'Afrikaans'}
 lingua=input("para qual lingua vc deseja traduzir? ") # af
 print(novo[lingua]) # afrikaans
-"""
+
 
 # dic1 vai receber o primeiro elemento da lista
 # coloca o Afrikaans dentro da variavel nome
@@ -45,12 +45,12 @@ print(novo[lingua]) # afrikaans
 # novo[sigla] = nome. Se a chave sigla ja existir no dicionario novo, ela substituira pelo novo valor nome
 # se a chave sigla nao existir no dicionario novo uma nova entrada sera criada com a chave sigla e o valor nome
 
-"""
+
 times = {"São Paulo" : "vencedor"}
 times['São Paulo'] = 'perdedor'
 time = input("Pra que time vc torce ? ")
 print(f"Você é um {times[time]}")
-"""
+
 
 # neste caso como a chave Sao paulo ja existe, ele substituiu o valor
 # se nao existisse a chave sao paulo, criaria uma chave e atribuiria seu valor
