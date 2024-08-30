@@ -33,34 +33,32 @@ def cria_matriz(linhas, colunas):
 #matriz1=cria_matriz(10,10)
 #mostra_matriz(matriz1)
 
-"""
+
 matriz1 = cria_matriz(10,10)
 for i in range(len(matriz1)):
     for j in range(len(matriz1[0])):
         if i%2==0:
             matriz1[i][j]=1 # aqui precisa ser [i][j] porque todos os 1 possuem a sua linha e a sua coluna
 mostra_matriz(matriz1)
-"""
+
 
 # i sao as linhas da matriz e todos os elementos das linhas pares vao ser trocados por 1
 
-"""
+
 matriz2 = cria_matriz(10,10)
 for i in range(len(matriz2)):
     for j in range(len(matriz2[0])):
         if j%2==0:
             matriz2[i][j]=2
 mostra_matriz(matriz2)
-"""
 
-"""
 m1=[[1,2,3,4], [5,6,7,8], [9,10,11,12]]
 mostra_matriz(m1)
 print()
 m2=cria_matriz(3,4)
 mostra_matriz(m2)
 print()
-"""
+
 
 def soma_matriz(m1, m2):
     if len(m1) == len(m2) and len(m1[0]) == len(m2[0]): # verifica se tem o mesmo numero de linhas e de colunas, m1[0] verifica a qtd de elementos da linha para ver a coluna
@@ -77,16 +75,16 @@ def soma_matriz(m1, m2):
 #soma_matriz(matriz1, matriz2)
 #mostra_matriz(matriz1)
 
-"""
+
 triangular = cria_matriz(5,5)
 for i in range(len(triangular)):
     for j in range(len(triangular[0])):
         if i>j:
             triangular[i][j] = 1
 mostra_matriz(triangular)
-"""
 
-"""
+
+
    j 0  1  2  3  4
 i
 0   [0, 0, 0, 0, 0]
@@ -94,9 +92,7 @@ i
 2   [1, 1, 0, 0, 0]
 3   [1, 1, 1, 0, 0]
 4   [1, 1, 1, 1, 0]
-"""
 
-"""
 xadrez = cria_matriz(8,8)
 for i in range(len(xadrez)):
     for j in range(len(xadrez)):
@@ -111,7 +107,7 @@ for i in range(len(xadrez)):
             else:
                 xadrez[i][j]=0
 mostra_matriz(xadrez)
-"""
+
 
 # no xadrez as linhas pares as colunas pares e igual a 0 e as colunas impares e igual a 1 e nas linhas impares e ao contrario
 
@@ -120,7 +116,7 @@ mostra_matriz(xadrez)
 #else:
 #   xadrez[i][j]=1
 
-"""
+
 i  j 0  1  2  3  4  5  6  7
 0   [0, 1, 0, 1, 0, 1, 0, 1]
 1   [1, 0, 1, 0, 1, 0, 1, 0]
@@ -130,9 +126,9 @@ i  j 0  1  2  3  4  5  6  7
 5   [1, 0, 1, 0, 1, 0, 1, 0]
 6   [0, 1, 0, 1, 0, 1, 0, 1]
 7   [1, 0, 1, 0, 1, 0, 1, 0]
-"""
 
-"""
+
+
 matriz=[[1,2,3], [4,5,6], [7,8,9]]
 mostra_matriz(matriz)
 for i in range(len(matriz)):
@@ -141,7 +137,7 @@ for i in range(len(matriz)):
         matriz[i][j]=matriz[j][i]
         matriz[j][i]=aux
 mostra_matriz(matriz)
-"""
+
 
 # esse codigo troca as linhas com as colunas usando outra variavel para trocar
 #a=1
