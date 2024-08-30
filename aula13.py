@@ -35,13 +35,13 @@ print(dic)
 #3-Atualizar o estoque de um whiskey
 #4-Deletar um whiskey da tabela
 
-"""
+
 lista = [10,20,30,40]
 print(lista)
 lista.remove(30)
 lista.pop(2)
 print(lista)
-"""
+
 #.pop serve para tirar um elemento da lista de acordo com o seu indice
 # .remove vai tirar um elemento especifico da lista
 
@@ -53,9 +53,9 @@ def obriga_opcao(msg, opcoes):
         resposta=msg
     return resposta
 
-"""
+
 obriga_opcao("Diga qual a sua cor? ", ['azul', 'vermelho'])
-"""
+
 
 # precisa do input na primeira resposta
 # precisa retornar resposta no final porque a funcao precisa saber qual foi a resposta do usuario
@@ -69,7 +69,6 @@ def printa_dic(dic):
             print(f"{key} : {dic[key]}")
     return
 
-"""
 my_dict = {
     'nome': 'Alice',
     'idade': 30,
@@ -84,7 +83,7 @@ my_dict = {
     }
 }
 printa_dic(my_dict)
-"""
+
 
 # serve para colocar as chaves e os seus valores um embaixo do outro
 # ele primeiro vai percorrer pelas chaves do dicionario
