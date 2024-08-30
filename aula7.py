@@ -1,4 +1,4 @@
-"""num=2
+num=2
 def par_ou_impar(numero):
     print(numero)
     if num % 2==0:
@@ -8,9 +8,8 @@ def par_ou_impar(numero):
     return
 par_ou_impar(5)
 print(numero)#vai dar erro pq a var numero so existe dentro da fução
-"""
 
-"""def vogal_ou_n(letras):
+def vogal_ou_n(letras):
     qtd_vogais=0
     for letra in letras:
         if letra in ["a","e","i","o","u"]:
@@ -28,9 +27,8 @@ print(numero)#vai dar erro pq a var numero so existe dentro da fução
 qtd = vogal_ou_n("danilo")
 print(qtd)
 #print(qtd_vogais) da erro pq ela so existe dentro da função
-"""
 
-"""def soma(num1, num2):
+def soma(num1, num2):
     return num1+num2
 def subtracao(num1, num2):
     return num1-num2
@@ -48,9 +46,9 @@ print(res)
 res = divisao(2,3)
 print(res)
 res = multiplicacao(2,3)
-print(res)"""
+print(res)
 
-"""def soma(num1, num2):
+def soma(num1, num2):
     return num1+num2
 
 def subtracao(num1, num2):
@@ -99,9 +97,9 @@ else:
 #lista_de_vinhos=["tinto", "rose", "branco"]
 #msg = "Qual vinho vc quer ? (tinto, rose, branco)"
 #vinho = checa_opcoes(msg, lista_de_vinhos)
-"""
 
-"""def checa_opcoes(frase,opcoes_cadastradas):
+
+def checa_opcoes(frase,opcoes_cadastradas):
 # frase é uma mensagem a ser exibida ao usuário para solicitar sua escolha e opcoes_cadastradas é uma lista contendo as opções válidas que o usuário pode escolher
     operacao = input(frase)
     while not operacao in opcoes_cadastradas:
@@ -147,4 +145,3 @@ if opcao=="maior":
     print(vinho_mais_caro)
 else:
     print(vinho_mais_barato)
-"""
