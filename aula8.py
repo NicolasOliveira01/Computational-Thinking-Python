@@ -1,4 +1,4 @@
-"""
+
 senha="1234"
 senha_usuario=input("Diga sua senha: ")
 tentativas = 1
@@ -13,17 +13,15 @@ if senha == senha_usuario:
     print("Acesso liberado")
 else:
     print("sai hacker")
-"""
 
-"""
+
+
 for i in range(3):
    senha_usuario=input("Diga sua senha: ")
    if senha == senha_usuario:
        print("acesso liberado")
        break
-"""
 
-"""
 lista=["danilo", "allen", "cordeiro", "israel", "francisco"]
 
 if "danilo" in lista: #verifica se a string "danilo" esta na lista
@@ -36,9 +34,7 @@ for nome in lista:
         print(f"Encontrei no {i}")
     i+=1
 # essa seria outra forma de conseguir o indice. Comeca com o i que vai ser o valor do indice com 0 antes do for e toda vez que o if for falso o i vai aumentar 1 
-"""
 
-"""
 def acha_maior(valores): #valores vai ser qualquer lista de numeros
     indice_maior=0
     maior=valores[0]
@@ -57,9 +53,7 @@ print(f"O carro mais caro e o {carro[local_maior]} e vale R${precos[local_maior]
 teste=[1,2,3,4,5]
 local_maior_teste=acha_maior(teste)
 print(local_maior_teste)
-"""
 
-"""
 def interseccao(lista1, lista2):
     comuns=[]
     for i in range(len(lista1)):
@@ -75,9 +69,7 @@ lista2=["nicolas", "joao", "tiago", "matheus", "guilherme", "rafael", "enzo"]
 intersect = interseccao(lista1, lista2)
 print(intersect)
 # nao colocar mesmo nome de uma variavel igual a de um parametro de uma funcao
-"""
 
-"""
 #para inverter valores
 
 a=2
@@ -85,9 +77,7 @@ b=3
 c=a
 a=b
 b=c
-"""
 
-"""
 def inverte_lista(lista):
     ultimo=len(lista)-1 # ele pega o ultimo numero da lista, pois len(lista) e o tamanho total da lista e o -1 pois ela comeca no 0
     for i in range(len(lista)//2): #// significa dividir um numero e arredondar ele para o menor(7//2=3), justamente porque para inverter precisa da metade e caso
@@ -102,18 +92,14 @@ teste=inverte_lista(numeros)
 teste2=["danilo", "banana", True, "mandioca", "baseball bat"]
 teste2=inverte_lista(teste2)
 print(teste)
-"""
 
-"""
 matriz = [[1,2,3,4], [4,5,6,7], [7,8,9,10]]
 # lista de lista, vetor de vetores
 for i in range(len(matriz)):
     for j in range(len(matriz[0])):
 # tambem funcionaria sem o 0, mas se colocar mais um elemento ele n vai printar
         print(matriz[i][j])
-"""
 
-"""
 import numpy as np 
 
 matriz = [[0,0,0,0,0], [0,0,0,0,0], [0,0,0,0,0], [0,0,0,0,0], [0,0,0,0,0]]
@@ -124,4 +110,3 @@ for i in range(len(matriz)):
             
 matriz = np.array(matriz)
 print(matriz)
-"""
