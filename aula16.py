@@ -9,7 +9,6 @@ travalinguas = "A aranha arranha a rã. A rã arranha a aranha. Nem a aranha arr
 #nome[0] = 'd' # nao e igual uma lista, vai dar erro
 #print(nome[2].append('.')) # vai dar erro
 
-"""
 print(travalinguas)
 travalinguas = travalinguas.replace('.','')
 print(travalinguas)
@@ -18,9 +17,7 @@ print(travalinguas)
 travalinguas = travalinguas.split(" ") # split
 print(travalinguas)
 #print('aranha' == 'aranha.') # vai dar falso
-"""
 
-"""
 palavras = {}
 for palavra in travalinguas:
     if palavra not in palavras.keys():
@@ -28,7 +25,7 @@ for palavra in travalinguas:
     else:
         palavras[palavra] += 1
     print(palavras)
-"""
+
 # se nao estiver com o split vai mostrar a quantidade de letras e nao de palavras
 
 def conta_palavras(travalingua):
@@ -44,18 +41,14 @@ def conta_palavras(travalingua):
             palavras[palavra] += 1
     return palavras
 
-"""
+
 travalingua2 = "Se percebeste, percebeste. Se não percebeste, faz que percebeste para que eu perceba que tu percebeste. Percebeste?"
 print(conta_palavras(travalingua2))
-"""
 
-"""
 nome = "danilo é humilde, esse danilo"
 nome = nome.capitalize()
 print(nome)
-"""
 
-"""
 nome = "danilo é humilde, esse danilo"
 sentenca = ''
 for palavra in nome.replace(',','').split(" "):
@@ -65,8 +58,6 @@ for palavra in nome.replace(',','').split(" "):
         palavra = palavra.replace("d", "D")
         sentenca += palavra + ' '
 print(sentenca)
-"""
-
 
 frase = "não é íntegro ômegra três no último mês"
 letras_zuadas = {'ãáàâ' : 'a', 'éêè' : 'e', 'íîì' : 'i', 'óòõô' : 'o', 'úû' : 'u'}
@@ -75,8 +66,6 @@ for letra_zuada in letras_zuadas.keys():
         frase.replace(letra, letras_zuadas[letra_zuada])
 print(frase)
 
-
-"""
 import pandas as pd
 dados = pd.read_csv("dado_mg.csv")
 print(dados.columns)
@@ -97,8 +86,6 @@ def teste(dados):
 dados_processados = teste(dados)
 dados_processados = pd.DataFrame(dados_processados)
 print(dados_processados)
-"""
-
 
 lista=['a','b', 'c']
 while True:
@@ -125,13 +112,11 @@ while True:
 # tudo que pode dar erro dando try
 
 
-"""
 num = input("Diga um numero: ")
 while not num.isnumeric():
     num = input("Diga um numero: ")
 num = int(num)
 print(num)
-"""
 
 while True:
     try:
