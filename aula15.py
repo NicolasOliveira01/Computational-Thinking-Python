@@ -14,13 +14,13 @@ import requests
 #.response.json()
 # vai transformar o response em um dicionario vazio
 
-"""
+
 cep = input("Diga seu cep: ")
 url = f"https://viacep.com.br/ws/{cep}/json/"
 response = requests.get(url)
 data = response.json()
 print(data)
-"""
+
 
 # pede o cep
 # a url recebe o endereco da api do cep e ela vai consultar o que foi digitado na variavel cep
