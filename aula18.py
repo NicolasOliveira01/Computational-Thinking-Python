@@ -1,4 +1,4 @@
-'''
+
 frase = "Concluímos que chegamos à conclusão que não concluímos nada. Por isso, conclui-se que a conclusão será concluída quando todas tiverem concluído que já é tempo de concluir uma conclusão."
 frase = frase.lower() # letra minúscula
 frase = frase.replace(".",'') # troca . por nada
@@ -10,7 +10,7 @@ for palavra in frase: # vai iterar sobre cada elemento da lista frase
         palavras[palavra] += 1
     else:
         palavras[palavra] = 1 # vai transformar a palavra em análise em uma chave do dicionário palavras, pois ele ainda não existe
-'''
+
 
 carros = {
     "model": ["Mazda RX4", "Mazda RX4 Wag", "Datsun 710", "Hornet 4 Drive", "Hornet Sportabout", "Valiant", "Duster 360", "Merc 240D", "Merc 230", "Merc 280", "Merc 280C", "Merc 450SE", "Merc 450SL", "Merc 450SLC", "Cadillac Fleetwood", "Lincoln Continental", "Chrysler Imperial", "Fiat 128", "Honda Civic", "Toyota Corolla", "Toyota Corona", "Dodge Challenger", "AMC Javelin", "Camaro Z28", "Pontiac Firebird", "Fiat X1-9", "Porsche 914-2", "Lotus Europa", "Ford Pantera L", "Ferrari Dino", "Maserati Bora", "Volvo 142E"],
@@ -27,16 +27,16 @@ carros = {
     "carb": [4, 4, 1, 1, 2, 1, 4, 2, 2, 4, 4, 3, 3, 3, 4, 4, 4, 1, 2, 1, 1, 2, 2, 4, 2, 1, 2, 2, 4, 6, 8, 2]
 }
 
-'''
+
 for key in carros.keys():
     print(key)
-'''
+
 # vai printar todas as chaves e somente o nome das chaves
 
-'''
+
 for value in carros['hp']:
     print(value)
-'''
+
 # vai printar todos os valores de carros na chave 'hp'
 
 
@@ -107,7 +107,7 @@ def remover():
 # pop vai remover aquele elemento de acordo com aquele índice
 # o segundo for vai iterar sobre as chaves do dicionário carros e para cada chave vai remover um item com o índice escolhido (opcao)
 
-'''
+
 while True:
     opcoes = ['sair','cadastrar','remover','mais potente','menos potente']
     dic = {str(i) : opcoes[i] for i in range(len(opcoes))}
@@ -127,7 +127,6 @@ while True:
         indice = acha_menor(carros['hp'])
         for key in carros.keys():
             print(f"{key} : {carros[key][indice]}")
-'''
 
 # dic transforma todos os elementos de opcoes em valores de chaves e cada chave representa o indice desse elemento
 # while true para sempre ficar perguntando e tem um opcao para sair com um break
