@@ -1,14 +1,12 @@
 import random
 
-"""
+
 jogo = {'são paulo' : 'vencedor', 'corinthians' : 'perdedor'} # sao paulo e corinthians sao as chaves do dicionario
 jogo['palmeiras'] = 'sem mundial' # adiciona mais uma chave ao dicionario jogo
 jogo['são paulo'] = 'trimundial' # atualiza a chave sao paulo
 time=input("Pra que time vc torce? ")
 print(f"Voce é um {jogo[time]}") # jogo e o dicionario e time e a pergunta
-"""
 
-"""
 saudacoes = {
             'oi' : ['olá', 'salve', 'e ai', 'fmz'],
             'tchau' : ['e o pix?', 'flw', 'tmj', 'vaza']
@@ -22,9 +20,7 @@ while True:
         break
     else:
         print('fala dnv')
-"""
 
-"""
 parentes = {} # dicionario
 parentes['pai'] = 'João'
 parentes['mãe'] = 'Maria'
@@ -35,9 +31,7 @@ for key in parentes.keys():
 
 #  parentes ['pai'] = 'Joao'
 #dicionario  chave    entrada
-"""
 
-"""
 carros = {'modelo': ['up', 'ka', 'fox', 'celta', 'gol'], 'preco': [10, 20, 15, 50, 30]}
 maior = carros['preco'][0]
 indice_maior = 0
@@ -48,9 +42,7 @@ for i in range(len(carros['preco'])):
 print(f"O carro mais caro é o {carros['modelo'][indice_maior]} e custa {carros['preco'][indice_maior]}")
 carros['potencia'] = [10, 20, 30, 100000, 10]
 print(f"A potência do carro mais caro é {carros['potencia'][indice_maior]}")
-"""
 
-"""
 jogo = {'sao paulo' : 'vencedor', 'corinthians' : 'perdedor'}
 jogo['palmeiras'] = 'sem mundial'
 print(jogo)
@@ -62,9 +54,7 @@ print(jogo)
 print(type(jogo['sao paulo'])) # o tipo de chave
 jogo['vasco'] = {'rebaixamento' : 'certeza', 'campeao' : 'serie B'}
 print(jogo)
-"""
 
-"""
 selecao = {
     'Nome' : 'Brasil',
     'titulos mundiais' : 5,
@@ -78,16 +68,12 @@ selecao = {
 
 for key in selecao.keys():
     print(f"{key} : {selecao[key]}")
-"""
 
-"""
 jogo = {'sao paulo' : 'vencedor', 'corinthians' : 'perdedor'}
 jogo['palmeiras'] = 'sem mundial'
 for key in jogo.keys():
     print(f"Voce torce para o {key} então voce é um {jogo[key]}")
-"""
 
-"""
 numeros={"pares" : [], "impares" : []}
 for i in range(11):
     if i%2==0:
@@ -95,9 +81,7 @@ for i in range(11):
     else:
         numeros['impares'].append(i)
 print(numeros)
-"""
 
-"""
 def forca_resposta(msg,lista_opcoes):
     resposta = input(msg)
     while resposta not in lista_opcoes:
@@ -116,4 +100,3 @@ while True:
         break
 
 print(carros)
-"""
